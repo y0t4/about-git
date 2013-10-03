@@ -65,6 +65,10 @@ repositoryから最新の状態をlocalに反映させます。
 対話式で色分けして表示してくれるのでとても便利です。
 stagingする際にはこのコマンドを積極的に利用しましょう。
 
+`$ git commit -m '#ISSUE-NUMBER`
+githubとかだと、commit messageに #1 のようなissue番号を付けると、連携してくれるという便利機能がある。
+gitlabでは不明なので今回でテストも兼ねて...。
+
 ### 非推奨(?)な基礎コマンドの応用
 `$ git add .`
 全てのファイルをindex領域に読み込みます。
