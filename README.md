@@ -96,31 +96,30 @@ $ git diff
 これまでのlogを表示してくれます。
 内容は大体以下のようなフォーマットです。
 
-
 >$ git log
 >commit a3ad5268fc854e72ab83d03f1612b261a5b9060b
 >Author: Yosuke OTA <yota@ns.ie.u-ryukyu.ac.jp>
 >Date:   Thu Oct 3 09:45:24 2013 +0900
->
->   Update README
->
+>\ 
+>\    Update README
+>\ 
 >commit b20186deb59cabb9d780df764bce734245fbcc89
 >Author: Yosuke OTA <yota@ns.ie.u-ryukyu.ac.jp>
 >Date:   Thu Oct 3 09:39:57 2013 +0900
->
->   #1 Issue
->
+>\ 
+>\    #1 Issue
+>\ 
 >commit a416ec305342a133b251ef3533bf503f44bee373
 >Author: Yosuke OTA <yota@ns.ie.u-ryukyu.ac.jp>
 >Date:   Thu Oct 3 09:38:08 2013 +0900
->
->   Update README about Issue-Number
->
+>\ 
+>\    Update README about Issue-Number
+>\ 
 >commit 75dbb46b11725ca501ff0b67f5f2206437613923
 >Author: Yosuke OTA <yota@ns.ie.u-ryukyu.ac.jp>
 >Date:   Thu Oct 3 09:22:12 2013 +0900
->
->   Initial commit
+>\ 
+>\    Initial commit
 
 
 
