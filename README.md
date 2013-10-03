@@ -191,3 +191,4 @@ mergeとは、他のブランチの変更内容と現在のブランチの内容
 [HEAD^nとかHEAD~nとか](http://qiita.com/takoba_/items/bcda4c796778ecabe3b1)
 [git checkout 使い方](http://transitive.info/article/git/command/checkout/)
 [git merge 使い方](http://transitive.info/article/git/command/merge/)
+[git push.defaultについて](http://qiita.com/misopeso/items/ede49b661cc7ad30528a)
