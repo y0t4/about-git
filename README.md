@@ -33,6 +33,7 @@ $ git pull
 ```
 
 まずはこれを覚えます。
+
 - `$ git clone REPOSITORY`
 repository から Project を持ってくるコマンド
 
@@ -97,6 +98,7 @@ $ git status
 ```
 
 これらは補助のためのコマンドです。
+
 - `$ git log`
 これまでのlogを表示してくれます。
 内容は大体以下のようなフォーマットです。
@@ -162,6 +164,7 @@ $ git fetch
 
 この辺りからはバージョン管理システムのBRANCHという考えが大事になってきます。
 BRANCHについての説明は置いといて、checkoutによる操作の方法を記します。
+
 - `$ git checkout BRANCH`
 BRANCHコマンドに切り替えるコマンドです。
 また、checkoutはその他にもファイルをcommitからindex領域に戻したりする際にも利用します。
