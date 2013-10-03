@@ -1,7 +1,7 @@
 # git の使い方
 
 ### 1.まず最初にすべきこと
-### 2.基礎コマンド
+### 2.基礎コマンド(最低限これは覚えよう)
 ### 3.覚えるべき補助コマンド
 ### 4.gitのbranchを活かすコマンド
 
@@ -23,7 +23,7 @@ $ git config --global user.email your-email@example.com
 
 また、gitコマンドの各ヘルプはconfigと同じように`$ git CMD --help`で参照することができます。
 
-## 2.基礎コマンド
+## 2.基礎コマンド(最低限これは覚えよう)
 ```
 $ git clone
 $ git add
