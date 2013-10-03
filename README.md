@@ -192,3 +192,5 @@ mergeとは、他のブランチの変更内容と現在のブランチの内容
 [git checkout 使い方](http://transitive.info/article/git/command/checkout/)
 [git merge 使い方](http://transitive.info/article/git/command/merge/)
 [git push.defaultについて](http://qiita.com/misopeso/items/ede49b661cc7ad30528a)
+
+[こわくないgit](http://www.slideshare.net/kotas/git-15276118)
