@@ -50,7 +50,8 @@ repository から Project を持ってくるコマンド
 `$ git commit`
 index領域にあるstagingされた変更を確定します。
 commit messageはしっかり記述するように心がけましょう。
-editorが起動されます。
+オプション無しだとeditorが起動されます。
+日本語も使えます(環境によるはず？)
 
 `$ git push`
 localでの作業内容をrepositoryにアップロードします。
@@ -158,12 +159,32 @@ HEADから2つ前との差分を見ることができます。
 HEADというのは、現在あなたが作業している場所を指します。
 BRANCHだったり。
 
-## 4.gitの特徴を活かすコマンド
+## 4.gitのbranchを活かすコマンド
 ```
 $ git checkout
-$ git fetch
 $ git merge
+$ git fetch
 ```
+
+この辺りからはバージョン管理システムのBRANCHという考えが大事になってきます。
+BRANCHについての説明は置いといて、checkoutによる操作の方法を記します。
+`$ git checkout BRANCH`
+BRANCHコマンドに切り替えるコマンドです。
+また、checkoutはその他にもファイルをcommitからindex領域に戻したりする際にも利用します。
+
+`$ git checkout -b aiueo`
+aiueoというブランチを作成して、同時にaiueoブランチに切り替えます。
+
+`$ git merge BRANCH`
+mergeとは、他のブランチの変更内容と現在のブランチの内容を合併させることです。
+オプションをつけて`$ git merge --no-ff`とすることで必ずcommitを行うようにしましょう。
+
+`$ git fetch`
+リモートからデータを取ってきます。
+`$ git pull`と混合するかもしれませんが、fetchではデータを取ってきた後は何もしません。
+`$ git pull` == `$ git fetch && git merge origin/master` という関係です。
+
+## 4-1.どんなときに使うか
 
 ## 1. リンク集
 [Markdown記法のチートシート](http://qiita.com/Qiita/items/c686397e4a0f4f11683d)
@@ -171,3 +192,5 @@ $ git merge
 [git log 全部入り](http://qiita.com/imudak/items/4a8549b46fe2e509a08c)
 [git コマンド 見る編](http://d.hatena.ne.jp/naokirin/20111202/1322576420)
 [HEAD^nとかHEAD~nとか](http://qiita.com/takoba_/items/bcda4c796778ecabe3b1)
+[git checkout 使い方](http://transitive.info/article/git/command/checkout/)
+[git merge 使い方](http://transitive.info/article/git/command/merge/)
