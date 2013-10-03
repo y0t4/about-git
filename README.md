@@ -68,7 +68,7 @@ repositoryから最新の状態をlocalに反映させます。
 対話式で色分けして表示してくれるのでとても便利です。
 stagingする際にはこのコマンドを積極的に利用しましょう。
 
-- `$ git commit -m '#ISSUE-NUMBER`
+- `$ git commit -m '#ISSUE-NUMBER'`
 githubとかだと、commit messageに #1 のようなissue番号を付けると、連携してくれるという便利機能がある。
 gitlab5.4の現在(2013/10/03)では非対応のようで、現在最新版の6.1では対応しているらしい。
 近いうちにアップデートします。
