@@ -51,7 +51,7 @@ localでの作業内容をrepositoryにアップロードします。
 `$ git pull`
 repositoryから最新の状態をlocalに反映させます。
 
-### 基礎コマンドの応用
+### 2-1.基礎コマンドの応用
 `$ git push -u REMOTE BRANCH`
 大抵の場合は $ git push -u origin master とする人が多いはずです。
 -uオプションは、今後のgit pushやgit pullを設定したREMOTE BRANCHに対して行う、というものです。
@@ -68,7 +68,7 @@ stagingする際にはこのコマンドを積極的に利用しましょう。
 `$ git commit -m '#ISSUE-NUMBER`
 githubとかだと、commit messageに #1 のようなissue番号を付けると、連携してくれるという便利機能がある。
 
-### 非推奨(?)な基礎コマンドの応用
+### 2-2.非推奨(?)な基礎コマンドの応用
 `$ git add .`
 全てのファイルをindex領域に読み込みます。
 非推奨だと思います。git commit -aと同じような感じなので理由は後述。
@@ -89,6 +89,7 @@ Mercurialと同じような使い方になってしまうためです。
 ```
 $ git log
 $ git diff
+$ git status
 ```
 
 これらは補助のためのコマンドです。
@@ -121,7 +122,32 @@ $ git diff
 >\ 
 >\    Initial commit
 
+`$ git diff`
+差分を表示してくれるコマンドです。
+この状態でreturnすると、最新のcommitと現在のコードの差分を表示します。
 
+`$ git status`
+現在の状態を知ることができます。
+未commit状態のindex領域のファイルや、stagingされていないファイルを表示します。
+
+### 3-1.覚えるべき補助コマンドの応用
+`$ git log -5   # または git log -n 5`
+最近の5つのcommit logを表示する。
+
+`$ git log HASH`
+git logしたときに出てくるcommitの横の文字列(hash)を書き込むことで、表示するcommit logの特定を行えます。
+HASHは、commitの特定が出来れば良いので頭から4文字とかくらいでも問題なかったりします。
+
+`$ git log -p`
+パッチ形式で変更を見ることができます。
+
+他にもcommit logを検索してくれる--grepとか、いろいろ見れるので検索してみてください。
+
+`$ git diff HEAD~2`
+HEADから2つ前との差分を見ることができます。
+数字は変更可能です。
+HEADというのは、現在あなたが作業している場所を指します。
+BRANCHだったり。
 
 ## 4.gitの特徴を活かすコマンド
 ```
@@ -132,4 +158,7 @@ $ git merge
 
 ## 1. リンク集
 [Markdown記法のチートシート](http://qiita.com/Qiita/items/c686397e4a0f4f11683d)
-[git add -p](http://qiita.com/crifff/items/1abf08bca4ce51db4775)
+[git add -pについて](http://qiita.com/crifff/items/1abf08bca4ce51db4775)
+[git log 全部入り](http://qiita.com/imudak/items/4a8549b46fe2e509a08c)
+[git コマンド 見る編](http://d.hatena.ne.jp/naokirin/20111202/1322576420)
+[HEAD^nとかHEAD~nとか](http://qiita.com/takoba_/items/bcda4c796778ecabe3b1)
