@@ -67,7 +67,6 @@ stagingする際にはこのコマンドを積極的に利用しましょう。
 
 `$ git commit -m '#ISSUE-NUMBER`
 githubとかだと、commit messageに #1 のようなissue番号を付けると、連携してくれるという便利機能がある。
-gitlabでは不明なので今回でテストも兼ねて...。
 
 ### 非推奨(?)な基礎コマンドの応用
 `$ git add .`
